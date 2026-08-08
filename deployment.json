@@ -1,0 +1,11 @@
+{
+    "network":  "studionet",
+    "chainId":  61999,
+    "contractAddress":  "0xB10a169dd7785243859879E129c9f7E9c33F7466",
+    "explorerBaseUrl":  "https://explorer-studio.genlayer.com",
+    "status":  "configured_verified",
+    "sourceHash":  "f40234182d0f5e3134a947628113cf08bd0baef5e28119c508464d09c6fe7481",
+    "methodCount":  32,
+    "rpcUrl":  "https://studio.genlayer.com/api",
+    "smokeRecordId":  null
+}

@@ -1,0 +1,3 @@
+export type Formula={id:string;product_name:string;sku:string;brand_owner:string;state:string;ingredient_ids:string[];declaration_ids:string[];claim_ids:string[];conflict_ids:string[];revision_ids:string[];incident_ids:string[]};
+export type LabelBootstrap={registry:{owner:string;registry_name:string;disclosure_policy:string;configured:boolean};counts:{formulas:number;ingredients:number;declarations:number;conflicts:number;released:number};recent_formulas:Formula[]};
+export type TxState={stage:"idle"|"wallet"|"submitted"|"finalizing"|"finalized"|"failed";action:string;hash?:string;error?:string};

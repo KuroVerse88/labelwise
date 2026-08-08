@@ -1,0 +1,191 @@
+::selection {
+  color: #202124;
+  background: #65e6ba;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+button,
+a,
+input,
+textarea {
+  transition:
+    color 170ms ease,
+    background-color 170ms ease,
+    border-color 170ms ease,
+    box-shadow 170ms ease,
+    transform 170ms ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #6c4cf1;
+  outline-offset: 3px;
+}
+
+.lw-top {
+  box-shadow: 0 10px 32px rgb(37 34 42 / 10%);
+}
+
+.lw-brand strong {
+  font-size: 17px;
+}
+
+.lw-tabs {
+  background: #fff;
+}
+
+.lw-tabs a {
+  min-width: 98px;
+  font-size: 10px;
+}
+
+.lw-main > header {
+  padding-block: 12px 18px;
+}
+
+.lw-main h1 {
+  font-size: 30px;
+  line-height: 1.05;
+}
+
+.lw-tools button,
+.lw-tools label {
+  min-height: 38px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.lw-metrics {
+  min-height: 70px;
+  background: #fff;
+}
+
+.lw-metrics span {
+  font-size: 9px;
+}
+
+.lw-metrics b {
+  font-size: 24px;
+}
+
+.lw-formula-board,
+.lw-sheet {
+  box-shadow: 0 20px 48px rgb(37 34 42 / 8%);
+}
+
+.lw-sheet {
+  border: 1px solid var(--line);
+}
+
+.lw-row {
+  min-height: 52px;
+}
+
+.lw-row > span {
+  font-size: 10px;
+}
+
+.lw-inspector {
+  background: #fff;
+  box-shadow: -14px 0 38px rgb(37 34 42 / 7%);
+}
+
+.lw-inspector-form h3 {
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.lw-inspector-form input,
+.lw-inspector-form textarea {
+  min-height: 44px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.lw-inspector-form textarea {
+  min-height: 104px;
+}
+
+.lw-inspector-form > button {
+  min-height: 45px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+@media (min-width: 821px) {
+  .labelwise {
+    grid-template-columns: 210px minmax(0, 1fr) 310px;
+    grid-template-rows: 62px 48px minmax(calc(100vh - 142px), auto) 32px;
+  }
+
+  .lw-main {
+    padding: 22px 24px 38px;
+  }
+}
+
+@media (max-width: 820px) {
+  .lw-main h1 {
+    font-size: 28px;
+  }
+
+  .lw-metrics {
+    min-height: 0;
+  }
+}
+
+@media (min-width: 821px) and (max-width: 1080px) {
+  html,
+  body {
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  .labelwise {
+    grid-template-columns: 168px minmax(0, 1fr);
+    grid-template-rows: 62px 48px auto auto 32px;
+  }
+
+  .lw-views {
+    grid-column: 1;
+    grid-row: 3 / 5;
+  }
+
+  .lw-main {
+    grid-column: 2;
+    grid-row: 3;
+    min-width: 0;
+    padding-inline: 18px;
+  }
+
+  .lw-inspector {
+    grid-column: 2;
+    grid-row: 4;
+    padding: 22px 18px 30px;
+    border-top: 6px solid var(--pink);
+    border-left: 0;
+    box-shadow: 0 -12px 32px rgb(37 34 42 / 6%);
+  }
+
+  .labelwise > footer {
+    grid-row: 5;
+  }
+
+  .lw-sheet {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .lw-row {
+    min-width: 720px;
+  }
+
+  .lw-inspector-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
